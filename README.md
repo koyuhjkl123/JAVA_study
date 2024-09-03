@@ -98,3 +98,62 @@ Queue : 먼저 넣는 데이터를 먼저 꺼내는 자료구조 (FIFO, First In
 2 x 3 = 6	3 x 8 = 24	<br>
 2 x 4 = 8	3 x 9 = 27	<br>
 2 x 5 = 10					
+
+<details>
+    <summary>코드 보기(Service)</summary>
+	
+```java
+
+package com.keduit;
+
+public class Hello {
+	
+	/**
+	 * 콘솔에 "Hello world!"를 출력하는 자바 프로그램
+	 */
+
+	public static void main(String[] args) {
+		
+	
+//		for(int i=1; i <=9; i++) {
+//			
+//			for(int j=2; j <=9; j++) {
+//				
+//				if(j % 2 == 0 && i <=5) {
+//					System.out.print(j + " x " + i + " = " + j*i +"\t");
+//				}else if(j % 2 != 0 && i >5) {
+//					System.out.print(j + " x " + i + " = " + j*i +"\t");
+//					
+//				}
+//			}
+//			System.out.println();
+//		}
+		
+//		if (i + 5 <= 9) {
+//	        System.out.print("3 x " + (i + 5) + " = " + 3 * (i + 5) + "\t");
+//	    }
+		
+
+		for (int i = 1; i <= 5; i++) {
+            for (int j = 2; j <= 8; j += 2) {
+                System.out.printf("%d x %d = %d\t", j, i, j * i);
+                if((j+1) % 2 != 0 && i+5 == 10) {
+                	System.out.print("\t\t");
+                	continue;
+                }
+                System.out.printf("%d x %d = %d\t", (j+1), (i+5), (j+1) * (i+5));
+            
+            
+            }
+            System.out.println(); // 다음 줄로 이동
+        }
+		
+		
+			
+	}
+}
+
+```
+</details>
+
+##[2일차](https://github.com/koyuhjkl123/JAVA_study2)
