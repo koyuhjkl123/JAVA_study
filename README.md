@@ -156,4 +156,4 @@ public class Hello {
 ```
 </details>
 
-##[2일차](https://github.com/koyuhjkl123/JAVA_study2)
+## [2일차](https://github.com/koyuhjkl123/JAVA_study2)
